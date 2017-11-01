@@ -1,1 +1,1 @@
-docker run --network=presentationbestpractices_default dcycle/pa11y --standard WCAG2A --ignore notice --ignore warning http://presentation/
+docker run --network=presentation-best-practices dcycle/pa11y --standard WCAG2A --ignore notice --ignore warning http://presentation/

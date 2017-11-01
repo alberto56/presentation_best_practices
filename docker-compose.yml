@@ -8,3 +8,8 @@ services:
     ports:
       - "80"
     working_dir: /usr/local/apache2/htdocs
+
+networks:
+  default:
+    external:
+      name: presentation-best-practices
