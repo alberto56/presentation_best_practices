@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Dcycle</title>
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+        <section>
+          <h2>A few things I learned when<br/>working with large Drupal sites</h2>
+        </section>
+
+        <section>
+          <img src="images/stm.png" />
+        </section>
+
+        <section>
+          <img src="images/lf.png" />
+        </section>
+
+        <section>
+          <h2>One-step deployment</h2>
+          <ul>
+            <li>Deploying a new version of a site should be a one-step process.</li>
+            <li>Updating the site should be a one step process.</li>
+            <li>Getting a local version of the site should be a one-step process.</li>
+          </ul>
+        </section>
+
+        <section>
+          <img src="images/deploy.png" />
+        </section>
+
+        <section>
+          <h2>Write automated tests early</h2>
+          <img src="images/circle.png" />
+        </section>
+
+        <section>
+          <h2>Use the right tools</h2>
+          <p>Github, Circle CI, DigitalOcean (~50$ a month)</p>
+          <img src="images/github.png" />
+        </section>
+
+        <section>
+          <h2>Test and automate everything you can</h2>
+          <ul>
+            <li>WCAG level-A compliance.</li>
+            <li>CSS best practices.</li>
+            <li>Spot visual differences quickly.</li>
+            <li>...</li>
+          </ul>
+        </section>
+
+        <section>
+          <img src="images/steward.png" />
+        </section>
+
+        <section>
+          <img src="images/steward-after.png" />
+        </section>
+
+        <section>
+          <img src="images/steward-diff.png" />
+        </section>
+
+        <section>
+          <h2>Agile development</h2>
+          <h3>(we pretty much do it already!)</h3>
+          <ul>
+            <li>Minimum viable product.</li>
+            <li>Keep it simple.</li>
+            <li>Release early, release often.</li>
+            <li>Implicate the client as much as possible.</li>
+            <li>Always reshuffle priorities (no detailed long roadmaps).</li>
+            <li>agilemanifesto.org</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>A few things I learned when<br/>working with large Drupal sites</h2>
+        </section>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // More info https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        history: true,
+
+        // More info https://github.com/hakimel/reveal.js#dependencies
+        dependencies: [
+          { src: 'plugin/markdown/marked.js' },
+          { src: 'plugin/markdown/markdown.js' },
+          { src: 'plugin/notes/notes.js', async: true },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+        ]
+      });
+    </script>
+  </body>
+</html>
